@@ -1028,3 +1028,8 @@ select {
   left: 13px; /* подвинуть влево всю группу */
 }
 
+@media (max-width: 768px) {
+  .logo-side {
+    display: none;
+  }
+}
