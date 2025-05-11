@@ -1012,6 +1012,8 @@ select {
   color: #f0d18c;
   line-height: 1.1;
   padding-bottom: 9px; /* ключевая точка — подгон нижнего края */
+  text-align: left;
+  margin-left: -20px;
 
 }
 
