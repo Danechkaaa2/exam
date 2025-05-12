@@ -1092,3 +1092,9 @@ select {
     padding: 0;
   }
 }
+@media (max-width: 768px) {
+  body {
+    background-image: url("images/fonsait_mobil.jpg");
+    background-attachment: fixed/* на мобилках часто лучше отключить fixed */
+  }
+}
