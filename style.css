@@ -369,7 +369,7 @@ main section {
 
 .reviews-layout {
   display: flex;
-  gap: 40px;
+  gap: 100px;
 }
 
 .reviews-sidebar {
