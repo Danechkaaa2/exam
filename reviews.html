@@ -1,0 +1,635 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Отзывы – GUT</title>
+<link href="style.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+.review-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  font-size: 0.85em;
+  background-color: rgba(240, 209, 140, 0.15);
+  color: #f0d18c;
+  border: 1px solid #f0d18c;
+  border-radius: 6px;
+  font-style: italic;
+}
+</style>
+
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+<div class="header-container">
+<div class="logo-flex">
+        <span class="logo-side">Кухни</span>
+          <h1 class="logo-main">GUT</h1>
+        <span class="logo-side">Асүйлер</span>
+      </div>
+<div class="burger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav>
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="reviews.html">Отзывы</a>
+<a href="about.html">О нас</a>
+<a href="contact.html">Контакты</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="reviews-section">
+<h2>Отзывы по моделям кухонь</h2>
+<div class="reviews-layout">
+<div class="reviews-sidebar">
+<button data-model="all">Показать все</button>
+<button data-model="milano">Milano Nero</button>
+<button data-model="imperial">Imperial Gold</button>
+<button data-model="noir">Noir Élite</button>
+<button data-model="verona">Verona Luxe</button>
+<button data-model="oslo">Oslo Matte</button>
+<button data-model="berlin">Berlin Steel</button>
+<button data-model="roma">Roma Classico</button>
+<button data-model="tokyo">Tokyo Line</button>
+<button data-model="paris">Paris Blanc</button>
+<button data-model="loft">New York Loft</button>
+<button data-model="vienna">Vienna Silk</button>
+<button data-model="dubai">Dubai Black</button>
+</div>
+<div class="reviews-content"><div class="review-item oslo fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Ольга, Санкт-Петербург</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Галина, Петропавловск</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Сергей, Новосибирск</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Ольга, Уфа</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Анна, Челябинск</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Галина, Санкт-Петербург</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Андрей, Новосибирск</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Наталья, Санкт-Петербург</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Андрей, Сочи</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Екатерина, Москва</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Артём, Челябинск</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Виктория, Челябинск</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Анна, Сочи</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Владислав, Челябинск</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Галина, Казань</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Марина, Санкт-Петербург</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Виктория, Сочи</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Екатерина, Санкт-Петербург</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Дмитрий, Москва</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Алексей, Петропавловск</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Лилия, Санкт-Петербург</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Светлана, Санкт-Петербург</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Ольга, Уфа</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Андрей, Уфа</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Анна, Москва</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Виктория, Казань</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Алексей, Москва</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Андрей, Петропавловск</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Дмитрий, Казань</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Евгений, Сочи</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Марина, Казань</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Дмитрий, Челябинск</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Ирина, Краснодар</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Ольга, Новосибирск</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Марина, Астана</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Тимур, Новосибирск</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Дмитрий, Уфа</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Андрей, Санкт-Петербург</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Наталья, Екатеринбург</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Наталья, Казань</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Ольга, Санкт-Петербург</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Артём, Екатеринбург</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Владислав, Краснодар</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Тимур, Москва</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Ольга, Екатеринбург</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Ирина, Новосибирск</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Тимур, Краснодар</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Владислав, Казань</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Анна, Екатеринбург</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Анна, Краснодар</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Галина, Краснодар</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Евгений, Казань</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Виктория, Москва</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Артём, Челябинск</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Ольга, Астана</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Ольга, Новосибирск</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Галина, Сочи</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Владислав, Челябинск</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Евгений, Петропавловск</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Артём, Сочи</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Ирина, Новосибирск</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Ирина, Петропавловск</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Владислав, Астана</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Фасады просто огонь, фурнитура — немецкая. 10 из 10!”</p>
+<p class="client">— Ирина, Москва</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Тимур, Петропавловск</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Владислав, Москва</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Дмитрий, Петропавловск</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Ирина, Казань</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Евгений, Москва</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Наталья, Москва</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Галина, Уфа</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Евгений, Москва</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Екатерина, Новосибирск</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Сергей, Краснодар</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Сергей, Екатеринбург</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Ольга, Санкт-Петербург</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Сергей, Сочи</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Наталья, Астана</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Лилия, Казань</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Марина, Краснодар</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Наталья, Петропавловск</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Виктория, Петропавловск</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Ирина, Петропавловск</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Марина, Санкт-Петербург</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Андрей, Петропавловск</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Олег, Уфа</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Сергей, Новосибирск</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Андрей, Челябинск</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Наталья, Астана</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Олег, Москва</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Артём, Санкт-Петербург</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Марина, Астана</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item paris fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Михаил, Астана</p>
+<span class="review-tag">Paris Blanc</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Артём, Уфа</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Галина, Новосибирск</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Наталья, Казань</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Михаил, Астана</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Артём, Санкт-Петербург</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Михаил, Краснодар</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Ольга, Петропавловск</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Тимур, Петропавловск</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Дмитрий, Москва</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Ольга, Астана</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item milano fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Олег, Новосибирск</p>
+<span class="review-tag">Milano Nero</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Олег, Москва</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Сервис на высшем уровне. Кухня оправдала все ожидания.”</p>
+<p class="client">— Дмитрий, Новосибирск</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Приятно удивлены качеством и подходом к клиенту.”</p>
+<p class="client">— Дмитрий, Челябинск</p>
+<span class="review-tag">Berlin Steel</span>
+</div><div class="review-item tokyo fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Ирина, Казань</p>
+<span class="review-tag">Tokyo Line</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Светлана, Челябинск</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item loft fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Виктория, Петропавловск</p>
+<span class="review-tag">New York Loft</span>
+</div><div class="review-item noir fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Дмитрий, Москва</p>
+<span class="review-tag">Noir Élite</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Теперь на кухне хочется проводить всё время.”</p>
+<p class="client">— Галина, Санкт-Петербург</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Очень доволен результатом. Установили быстро и аккуратно.”</p>
+<p class="client">— Тимур, Петропавловск</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item imperial fade-in">
+<p class="quote">“Отличная кухня! Все сделано качественно и со вкусом.”</p>
+<p class="client">— Михаил, Петропавловск</p>
+<span class="review-tag">Imperial Gold</span>
+</div><div class="review-item verona fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Анна, Казань</p>
+<span class="review-tag">Verona Luxe</span>
+</div><div class="review-item roma fade-in">
+<p class="quote">“Красивая, функциональная кухня. Подходит идеально под интерьер.”</p>
+<p class="client">— Тимур, Петропавловск</p>
+<span class="review-tag">Roma Classico</span>
+</div><div class="review-item dubai fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Наталья, Казань</p>
+<span class="review-tag">Dubai Black</span>
+</div><div class="review-item oslo fade-in">
+<p class="quote">“Дизайн — просто мечта. Спасибо за профессионализм!”</p>
+<p class="client">— Виктория, Астана</p>
+<span class="review-tag">Oslo Matte</span>
+</div><div class="review-item vienna fade-in">
+<p class="quote">“Ребята знают толк в кухнях. Всё безупречно.”</p>
+<p class="client">— Дмитрий, Казань</p>
+<span class="review-tag">Vienna Silk</span>
+</div><div class="review-item berlin fade-in">
+<p class="quote">“Материалы премиальные, сборка на отлично. Рекомендую!”</p>
+<p class="client">— Лилия, Уфа</p>
+<span class="review-tag">Berlin Steel</span>
+</div></div>
+<button class="load-more" id="load-more-btn" style="display:none;">Показать ещё</button>
+</div>
+</section>
+</main>
+<footer>
+<p>© 2025 GUT | Стиль. Качество. Индивидуальность.</p>
+</footer>
+<script>
+  const buttons = document.querySelectorAll('.reviews-sidebar button');
+  const reviews = document.querySelectorAll('.review-item');
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const isMobile = window.innerWidth <= 768;
+  let currentIndex = 0;
+  const batchSize = 10;
+
+  function showReviews(model) {
+    currentIndex = 0;
+    reviews.forEach(r => r.style.display = 'none');
+
+    const filtered = model === 'all'
+      ? Array.from(reviews)
+      : Array.from(reviews).filter(r => r.classList.contains(model));
+
+    if (isMobile && model === 'all') {
+      filtered.slice(0, batchSize).forEach(r => r.style.display = 'block');
+      loadMoreBtn.style.display = filtered.length > batchSize ? 'block' : 'none';
+
+      loadMoreBtn.onclick = () => {
+        currentIndex += batchSize;
+        const nextBatch = filtered.slice(currentIndex, currentIndex + batchSize);
+        nextBatch.forEach(r => r.style.display = 'block');
+        if (currentIndex + batchSize >= filtered.length) {
+          loadMoreBtn.style.display = 'none';
+        }
+      };
+    } else {
+      filtered.forEach(r => r.style.display = 'block');
+      loadMoreBtn.style.display = 'none';
+    }
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const model = button.getAttribute('data-model');
+      showReviews(model);
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const model = new URLSearchParams(window.location.search).get('model') || 'all';
+    const button = document.querySelector(`.reviews-sidebar button[data-model="${model}"]`);
+    if (button) button.click();
+  });
+</script>
+<script>
+    function toggleMenu() {
+      const nav = document.querySelector("nav");
+      nav.classList.toggle("active");
+    }
+    </script>
+<script>
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  fadeElements.forEach(el => observer.observe(el));
+</script>
+<script src="menu.js"></script>
+</body>
+</html>
