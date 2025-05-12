@@ -233,7 +233,7 @@ main section {
 
 .catalog {
   max-width: 1800px;
-  margin: 60px auto;
+  margin: 30px;
   text-align: center;
   color: #fcefc1;
 }
