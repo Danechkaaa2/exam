@@ -233,7 +233,7 @@ main section {
 
 .catalog {
   max-width: 1800px;
-  margin: 30px;
+  margin: 30px ;
   text-align: center;
   color: #fcefc1;
 }
@@ -355,7 +355,7 @@ main section {
 
 .reviews-section {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 60px auto;
   padding: 20px;
   color: #fcefc1;
 }
@@ -369,7 +369,7 @@ main section {
 
 .reviews-layout {
   display: flex;
-  gap: 100px;
+  gap: 40px;
 }
 
 .reviews-sidebar {
@@ -1008,7 +1008,7 @@ select {
 
 .contact-info {
   flex: 1 1 35%;
-  color: #f0d18c;
+  color: #fcefc1;
   padding: 1px;
   text-align: center;
 }
@@ -1075,7 +1075,7 @@ select {
   font-size: 2em;
   margin-bottom: 10px;
   text-align: center;
-  margin: 10px 0 20px; /* верх 10px, низ 20px */
+  margin: 10px 0 20px; 
   
 }
 
@@ -1092,9 +1092,67 @@ select {
     padding: 0;
   }
 }
+
 @media (max-width: 768px) {
   body {
     background-image: url("images/fonsait_mobil.jpg");
-    background-attachment: fixed/* на мобилках часто лучше отключить fixed */
+    background-attachment: fixed 
   }
+}
+
+.work-hours {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.work-hours h3 {
+  font-size: 1.8em;
+  color: #f0d18c;
+  margin-bottom: 15px;
+}
+
+.work-hours table {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  font-family: 'Roboto', sans-serif;
+}
+
+.work-hours thead {
+  background-color: rgba(246, 209, 122, 0.1);
+}
+
+.work-hours th,
+.work-hours td {
+  padding: 12px 15px;
+  color: #fcefc1;
+  text-align: center;
+}
+
+.work-hours tr:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.work-hours tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.catalog-stats {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.catalog-stats h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f0d18c;
 }
