@@ -1,27 +1,40 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const ctx = document.getElementById('catalogChart').getContext('2d');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Классика', 'Модерн', 'Минимализм', 'Лофт'],
-      datasets: [{
-        label: 'Количество моделей',
-        data: [6, 8, 4, 3], // ← Подставь реальные данные
-        backgroundColor: ['#F0D18C', '#C8A968', '#A67C52', '#8B5E3C']
-      }]
-    },
-    options: {
-      responsive: true,
-      scales: {
-        y: { beginAtZero: true }
+document.addEventListener('DOMContentLoaded', function () {
+  const ctx = document.getElementById('catalogChart');
+  if (ctx) {
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Классика', 'Модерн', 'Минимализм', 'Лофт'],
+        datasets: [{
+          label: 'Количество моделей',
+          data: [4, 4, 4, 4],
+          backgroundColor: 'rgba(255, 215, 0, 0.6)',
+          borderColor: 'rgba(255, 215, 0, 1)',
+          borderWidth: 1
+        }]
       },
-      plugins: {
-        legend: { display: false },
-        title: {
-          display: false
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: {
+              color: '#FFD700'
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: '#FFD700'
+            }
+          },
+          y: {
+            ticks: {
+              color: '#FFD700'
+            }
+          }
         }
       }
-    }
-  });
+    });
+  }
 });
