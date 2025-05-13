@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты – GUT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+    <div class="logo-flex">
+      <span class="logo-side">Кухни</span>
+      <h1 class="logo-main">GUT</h1>
+      <span class="logo-side">Асүйлер</span>
+    </div>
+    <div class="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-wrapper fade-in">
+      <div class="contact-info fade-in">
+        <h2>Контактная информация</h2>
+        <p><strong>Адрес:</strong> г. Петропавловск, ул. Сутюшева, д.5</p>
+        <p><strong>Телефон:</strong> +7 (705) 777-34-43</p>
+        <p><strong>Email:</strong> info@gut-kitchen.kz</p>
+    
+      <div class="work-hours fade-in">
+  <h2 class="form-title">Режим Работы:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>День</th>
+        <th>Время</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Пн-Пт</td>
+        <td>10:00–19:00</td>
+      </tr>
+      <tr>
+        <td>Суббота</td>
+        <td>10:00–17:00</td>
+      </tr>
+      <tr>
+        <td>Воскресенье</td>
+        <td>Выходной</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    </section>
+
+    <section class="contact-wrapper fade-in">
+      <form class="contact-form fade-in">
+        <h2 class="form-title">Обратная связь</h2>
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="email" placeholder="Email (необязательно)">
+        <textarea placeholder="Ваше сообщение"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <script>
+  console.log("Контактный блок:", document.querySelector('.contact-wrapper'));
+  </script>
+  <script src="menu.js" defer></script>
+  <script src="fade_in_anim.js"></script>
+</body>
+</html>
