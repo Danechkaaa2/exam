@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const ctx = document.getElementById('catalogChart');
-  if (ctx) {
+  const canvas = document.getElementById('catalogChart');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
     new Chart(ctx, {
       type: 'bar',
       data: {
         labels: ['Классика', 'Модерн', 'Минимализм', 'Лофт'],
         datasets: [{
           label: 'Количество моделей',
-          data: [4, 4, 4, 4],
+          data: [5, 3, 4, 2],
           backgroundColor: 'rgba(255, 215, 0, 0.6)',
           borderColor: 'rgba(255, 215, 0, 1)',
           borderWidth: 1
